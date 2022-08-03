@@ -10,7 +10,7 @@ const config = {
   tagline: 'Find your identities',
   url: 'https://subsetdata.com',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
