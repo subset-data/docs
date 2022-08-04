@@ -83,7 +83,7 @@ const config = {
           { to: '/blog', label: 'Blog', position: 'left' },
           {
             to: '/release', 
-            label: 'Release', 
+            label: 'Release Notes', 
             position: 'left'
           },
           {
