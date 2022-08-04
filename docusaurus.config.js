@@ -33,7 +33,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: '/docs/',
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
         },
         blog: {
@@ -44,6 +44,24 @@ const config = {
         },
       }),
     ],
+  ],
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'release',
+        path: 'release',
+        routeBasePath: 'release'
+      }
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'learn',
+        path: 'learn',
+        routeBasePath: 'learn'
+      }
+    ]
   ],
 
   themeConfig:
@@ -62,9 +80,17 @@ const config = {
             position: 'left',
             label: 'Documentation',
           },
-          {to: '/learn', label: 'Learn', position: 'left'},
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {to: '/release', label: 'Release', position: 'left'},
+          { to: '/blog', label: 'Blog', position: 'left' },
+          {
+            to: '/release', 
+            label: 'Release', 
+            position: 'left'
+          },
+          {
+            to: '/learn', 
+            label: 'Learn', 
+            position: 'left'
+          }
         ],
       },
       colorMode: {
