@@ -80,7 +80,9 @@ const config = {
       navbar: {
         logo: {
           alt: 'Subset',
-          src: 'img/Subset1700NewWithLogo.svg'
+          src: 'img/Subset1700NewWithLogo.svg',
+          href: 'https://subsetdata.com',
+          target: '_self'
         },
         items: [
           {
@@ -99,6 +101,12 @@ const config = {
             to: '/learn', 
             label: 'Learn', 
             position: 'left'
+          },
+          {
+            href: 'https://github.com/subset-data/docs',
+            position: 'right',
+            className: 'header-github-link',
+            'aria-label': 'GitHub repository',
           }
         ],
       },
