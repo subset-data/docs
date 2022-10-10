@@ -7,7 +7,6 @@ import useGlobalData from '@docusaurus/useGlobalData';
 export const ReleaseHistory = (props) => {
    const context = useDocusaurusContext();
     const versions = context.globalData['docusaurus-plugin-content-docs'].release.versions[0].docs.filter(i=>i.id!=='index')
-    console.log(versions)
     return versions.map(v=><Link key={v.path} href={v.path}>{v.id}</Link>)
 };
 

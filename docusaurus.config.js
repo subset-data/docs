@@ -83,7 +83,8 @@ const config = {
             navbar: {
                 logo: {
                     alt: 'Subset',
-                    src: 'img/Subset1700NewWithLogo.svg'
+                    src: 'img/Subset1700NewWithLogo.svg',
+                    href: 'https://subsetdata.com'
                 },
                 items: [
                     {
