@@ -1,13 +1,13 @@
-import React from 'react';
-import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import clsx from 'clsx';
+import React from 'react';
 
-import styles from './index.module.css';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Head from '@docusaurus/Head';
+import { Redirect } from '@docusaurus/router';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import styles from './index.module.css';
 
 const theme = createTheme({
     typography: {
@@ -20,8 +20,8 @@ const theme = createTheme({
             light: "#52D0E3"
         },
         secondary: {
-            main: '#9c27b0', 
-            light: '#915DC8', 
+            main: '#9c27b0',
+            light: '#915DC8',
             dark: '#951E85'
         }
     }
@@ -64,8 +64,8 @@ export default function Home(): JSX.Element {
                 description="Subset Documentation />">
                 {/* <HomepageHeader /> */}
                 <main>
-                    {/* <HomepageFeatures /> */}
                 </main>
+                <Redirect to='/intro' />
             </Layout>
         </ThemeProvider>
     );
