@@ -62,9 +62,9 @@ export default function Home(): JSX.Element {
             <Layout
                 title={`Hello from ${siteConfig.title}`}
                 description="Subset Documentation />">
-                <HomepageHeader />
+                {/* <HomepageHeader /> */}
                 <main>
-                    <HomepageFeatures />
+                    {/* <HomepageFeatures /> */}
                 </main>
             </Layout>
         </ThemeProvider>
