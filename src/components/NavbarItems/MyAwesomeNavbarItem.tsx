@@ -40,10 +40,12 @@ const MyAwesomeNavbarItem = ({ label, to, is_base, ...props }: any) => {
         underline="none"
         color={theme.palette.text.primary}
         component={Link}
+        href={to}
         sx={{
             cursor: 'pointer',
             '&:hover': {
-                color: theme.palette.text.primary
+                color: theme.palette.text.primary,
+                textDecoration: 'none'
             },
             userDrag: 'none',
             userSelect: 'none'
@@ -54,7 +56,6 @@ const MyAwesomeNavbarItem = ({ label, to, is_base, ...props }: any) => {
             alignItems="center"
             ml={1}
             draggable="true"
-            onClick={() => { console.log(href); history.push(href); }}
             onMouseOver={setHoveredTrue}
             onMouseOut={setHoveredFalse}
             onMouseDown={setClickedTrue}
